@@ -1,4 +1,4 @@
-# Encapsulamiento
+# Triggers, functions y procedures
 
 En este tema hemos visto tres objetos que nos permiten "almacenar" un codigo que podra ser ejecutado posteriormente: `TRIGGERS`. `FUNCTIONS` y `PROCEDURES`.
 
