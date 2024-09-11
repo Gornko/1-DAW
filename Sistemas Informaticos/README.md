@@ -1,6 +1,6 @@
-# Introducción
+# Sistemas Informáticos
 
-En la asignatura de **Sistemas**, hemos abordado una amplia gama de temas fundamentales relacionados con el funcionamiento y la administración de sistemas informáticos. Esta materia incluye el estudio de hardware y software, sistemas operativos, virtualización, redes, y tecnologías específicas como Linux, Windows Server y Docker. A continuación, se presenta el índice de los temas tratados en el curso.
+En la asignatura de **Sistemas Informáticos**, hemos abordado una amplia gama de temas fundamentales relacionados con el funcionamiento y la administración de sistemas informáticos. Esta materia incluye el estudio de hardware y software, sistemas operativos, virtualización, redes, y tecnologías específicas como Linux, Windows Server y Docker. A continuación, se presenta el índice de los temas tratados en el curso.
 
 ## Índice
 
