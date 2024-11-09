@@ -1,0 +1,17 @@
+legend{
+    color: rgb(26, 97, 190);
+}
+p{
+    color:darkcyan ;
+    display: flex;
+    float: left;
+    margin: 10px;
+
+}
+label{
+    color: black;
+}
+fieldset{
+    margin: 1em;
+}
+

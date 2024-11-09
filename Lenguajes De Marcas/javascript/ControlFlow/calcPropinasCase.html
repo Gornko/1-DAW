@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cuenta
+        var servicio
+        var propina=null
+        function calculoPropina(cuenta, servicio){
+            switch (servicio){
+                case "bueno": 
+                propina=cuenta*0.15
+                break;
+                case "regular": 
+                propina=cuenta*0.10
+                break
+                case "malo": 
+                propina=cuenta*0.05
+                break
+                default: prompt("algo no fue bien")
+            }
+
+        }
+        cuenta=parseFloat(prompt("Cuanto sale la cuenta?"))
+        servicio=prompt("El servicio ha sido bueno, regular o malo?")
+        calculoPropina(cuenta, servicio)
+        if(propina!=null){
+            alert("La propina es de "+propina)
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

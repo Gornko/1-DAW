@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    
+    
+
+</head>
+<body><h2>Tabla Generada con JavaScript</h2>
+
+    <div id="tablaContainer"></div>
+    
+    <script>
+    function generarTabla(filas, columnas) {
+        var tabla = '<table border="1">';
+        for (var i = 0; i < filas; i++) {
+            tabla += '<tr>';
+            for (var j = 0; j < columnas; j++) {
+                tabla += '<td>'+(parseInt(Math.random()*(500-100+1))+100)+'</td>';
+            }
+            tabla += '</tr>';
+        }
+        tabla += '</table>';
+        return tabla;
+    }
+    
+    // Llamada a la función para generar la tabla
+    var tablaHTML = generarTabla(3, 4); // Genera una tabla de 3 filas y 4 columnas
+    
+    // Insertar la tabla en el contenedor
+    document.getElementById('tablaContainer').innerHTML = tablaHTML;
+    </script>
+</body>
+</html>

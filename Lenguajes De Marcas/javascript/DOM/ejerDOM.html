@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Aut dolor veritatis vel ducimus impedit eum reiciendis fugiat. </h1>
+    <p class="otro">Lorem ipsum dolor sit amet. Qui obcaecati corrupti est enim liberoaut dolor. Qui nemo sint
+        tu corporis voluptatemet repellat ad animi libero! Id magni laborum <strong>Qui mollitia et aliquid
+            consequuntur in pariatur reiciendis</strong> est nostrum nihil nam doloribus cumque! In nobis quibusdamAb
+        nulla et velit minus a commodi maiores! </p>
+    <h1 id="especial">Sed libero dignissimos sed omnis odit! </h1>
+    <p>33 dignissimos dignissimos quo voluptatem omnisqui neque qui velit ipsum quo minima dolor. Et provident
+        veritatis <em>Cum voluptas et fuga nihil qui accusamus dolores qui dolorem ipsa</em> qui consequatur
+        accusamus sit voluptates velit. </p>
+    <ul>
+        <li>Et voluptatem repudiandae est delectus voluptatum cum recusandae molestias! </li>
+        <li>Aut eveniet repudiandae sed temporibus rerum ut rerum pariatur quo repudiandae rerum. </li>
+        <li>Qui omnis autem ut dolorum dolores sed delectus ipsam. </li>
+    </ul>
+    <h2>Eum quidem omnis non quos veniam ut nostrum debitis. </h2>
+    <p>Aut labore facere a ipsum molestiae <a href="https://www.loremipzum.com" target="_blank">Ut nobis aut
+            vitae minus qui eaque eaque sit saepe illum</a>. Qui voluptate animiEum veritatis quo consectetur dolore tu
+        recusandae error ut eaque officiis sit consequuntur voluptatibus id aliquid autem. Et maxime facilis et
+        dolor sunteum incidunt est voluptatum tempora. </p>
+    <h2>Sed enim fugit quo nisi omnis. </h2>
+    <p>Eum doloremque maxime id magnam accusamuset obcaecati. Aut sunt culpa quo rerum nesciuntest nemo. A
+        dignissimos dolorumEa architecto et asperiores nihil et rerum ipsum. </p>
+    <ol>
+        <li>Aut quasi voluptatem non internos ipsam. </li>
+        <li>Et quaerat rerum qui adipisci ipsa est galisum dolorum. </li>
+    </ol>
+    <p> <a href="https://www.loremipzum.com/es/generador-de-texto">genera</a></p>
+    <script>
+        /*Parte del ejercicio 1*/
+        var numeroParrafos = document.getElementsByTagName("P")
+        var numParrMeno15Carac = 0
+        var parrafosImprimir = "\n"
+        for (let i = 0; i < numeroParrafos.length; i++) {
+            const element = numeroParrafos[i]
+            if (element.innerText.length < 15) {
+                numParrMeno15Carac++
+                parrafosImprimir += element.innerText + "\n"
+            }
+        }
+        alert("Parrafos: " + numeroParrafos.length + " y de ellos " + numParrMeno15Carac + " con menos de 15 caracteres son: " + parrafosImprimir)
+
+        /*Parte del ejercicio2*/
+        var cuentaS = 0
+        var idEspecial = document.getElementById("especial").innerText
+        idEspecial=idEspecial.toLowerCase()
+        for(let i=0;i<idEspecial.length;i++){
+            if(idEspecial[i]=="s"){
+                cuentaS++
+            }
+        }
+        alert("El texto es:\n"+idEspecial+"\ny hay "+cuentaS+" s.")
+        
+        /*Ejercicio 3*/
+        
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Tabla 5x5 con Números Aleatorios</h1>
+    <div id="contenedor"></div>
+
+    <script>
+        function generarTabla(filas, columnas) {
+            const tabla = document.createElement("table");
+            tabla.border='1'
+            for (let i = 0; i < filas; i++) {
+                const fila = document.createElement("tr");
+                for (let j = 0; j < columnas; j++) {
+                    const numeroAleatorio = Math.floor(Math.random() * (500 - 100 + 1)) + 100;
+                    const celda = document.createElement("td");
+                    celda.textContent = numeroAleatorio;
+                    fila.appendChild(celda);
+                }
+                tabla.appendChild(fila);
+            }
+            document.getElementById("contenedor").appendChild(tabla);
+        }
+        generarTabla(5, 5);
+    </script>
+</body>
+</html>

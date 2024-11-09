@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Falta comprobar las radiobutton, las select y las checkbox
+        se puede mejorar todo mucho con bucles, seguro, pero hay que pensarlo todo muy bien*/
+        function comprobaciones(){
+            var textoAlertFalta=""
+            
+            var cuentaFaltas=0
+            var inputApellido=document.getElementsByName("ape")
+            var inputNombre=document.getElementsByName("nom")
+            var inputFecha=document.getElementsByName("fnac")
+            var inputSexo=document.getElementsByName("sexo")
+            var sexo=""
+            var textoAlertBien="Nombre: "+inputNombre[0].value+"\n"+
+                                "Apellidos: "+inputApellido[0].value+"\n"+
+                                "Fecha de nacimiento: "+inputFecha[0].value+ "\n" +
+                                "Sexo: "+sexo+ "\n"
+
+            
+            /*check apellidos*/
+            if(inputApellido[0].value==""){
+                textoAlertFalta+="Falta Apellidos\n"
+                cuentaFaltas++
+            }
+            /*check nombre*/
+            if(inputNombre[0].value==""){
+                textoAlertFalta+= "Falta Nombre\n"
+                cuentaFaltas++
+            }
+            /*check fecha nacimiento*/
+            if(inputFecha[0].value==""){
+                textoAlertFalta+= "Falta Fecha de nacimiento\n"
+                cuentaFaltas++
+            }
+            /*chek radiobutton sexo NO FUNCIONA*/
+            for(let i=0; i<inputSexo.length;i++){
+                if(inputSexo[i].checked){
+                   sexo=inputSexo[i].value 
+                }
+            }
+
+            /*imprimir campos que faltan o resultado del formulario*/
+            if(cuentaFaltas!=0){
+                alert(textoAlertFalta)
+            }else{
+                alert(textoAlertBien)
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Por favor, si usted es docente responda a las siguentes preguntas:</h1>
+    <p>Este formulario se visualizará mejor con navegadores de última generación</p>
+    <form action="formu.html" method="get">
+        <fieldset>
+            <legend>1. Información personal</legend>
+            <p>
+                Apellidos: <input type="text" name="ape" size="30">
+                Nombre: <input type="text" name="nom">
+                Fecha de nacimiento: <input type="text" name="fnac">
+                <br>
+                Sexo:
+                <input type="radio" name="sexo" value="H" checked>Hombre
+                <input type="radio" name="sexo" value="M">Mujer
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>2. Información de contacto</legend>
+            <p>
+                Teléfono: <input type="text" name="tfno">
+                <br>
+                Email: <input type="text" name="email" size="30">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>3. Datos profesionales</legend>
+            <p>
+                Centro de trabajo: <input type="text" name="centro" size="30"> <br>
+                Localidad: <input type="text" name="loc"> <br>
+                ¿Es funcionario? <input type="checkbox" name="funcionario" value="Si"> <br>
+                NRP: <input type="text" name="nrp" size="15"> <br>
+                Seminario/nivel: <select name="seminario" size="2">
+                    <option value="len">Lengua y Literatura</option>
+                    <option value="mat">Matemáticas</option>
+                    <optgroup label="Primer ciclo ESO">
+                        <option value="geh">Geografía e historia</option>
+                        <option value="byg">Biología y geología</option>
+                        <option value="tec">Tecnología</option>
+                    </optgroup>
+                    <optgroup label="Segundo ciclo ESO">
+                        <option value="fyq">Física y Quimica</option>
+                        <option value="plas">Educación plática y visual</option>
+                        <option value="mus">Música</option>
+                        <option value="edfis">Educación física</option>
+                    </optgroup>
+                    <optgroup label="Bachillerato">
+                        <option value="cult">Cultura y lenguas clásicas</option>
+                        <option value="filo">Ética y filosofía</option>
+                    </optgroup>
+                </select>
+                <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>4. Por favor facilite la siguiente información:</legend>
+            <p>
+                ¿Cómo llegó hasta aquí?: <select name="refer">
+                    <option value="azar">Al azar</option>
+                    <option value="url">Alguien le indicó el url de la página</option>
+                    <option value="browser">A través de un programa buscador</option>
+                    <option value="link">Mediante un enlace desde otra página</option>
+                </select>
+                <br>
+                Introduzca aquí sus comentarios:<br><textarea name="coment" cols="75" rows="15"></textarea>&emsp;
+                <br>
+                Desearía más información sobre:<br>
+                <input type="checkbox" name="info" value="Material audiovisual">Material audiovisual<br>
+                <input type="checkbox" name="info" value="Textos electrónicos">Textos electrónicos<br>
+                <input type="checkbox" name="info" value="Libros de texto">Libros de texto<br>
+                <input type="checkbox" name="info" value="Diseños curriculares">Diseños curriculares<br>
+                <input type="checkbox" name="info" value="Legislación educativa">Legislación educativa<br>
+            </p>
+        </fieldset>
+        <p>
+            <button type="button" id="boton" onclick="comprobaciones()">Enviar formulario</button>
+            <button type="reset">Limpiar formulario</button>
+        </p>
+    </form>
+</body>
+
+</html>

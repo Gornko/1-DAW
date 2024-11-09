@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numLi= parseInt(prompt("Cuantos elementos tiene la lista?"))
+        var lista = document.createElement("ul")
+        document.body.appendChild(lista)
+        var arrayLi=new Array(numLi)
+        var id=document.createAttribute("id")
+        id.value="lista1"
+        lista.setAttributeNode(id)
+        
+        for (let i=0;i<arrayLi.length;i++){
+            var li=document.createElement("li")
+            var text=document.createTextNode("Opcion "+(i+1))
+            var id=document.createAttribute( "id")
+            id.value=i+1
+            li.setAttributeNode(id)
+            li.appendChild(text)
+            lista.appendChild(li)
+        }
+        function addOption(){
+            
+            numLi++
+            var li=document.createElement("li")
+            var text=document.createTextNode("Opcion "+numLi)
+            var id=document.createAttribute( "id")
+            id.value=numLi
+            li.setAttributeNode(id)
+            li.appendChild(text)
+            lista.appendChild(li)
+        }
+        function removeOption(){
+            
+            var opcion=prompt("Que numero?")
+            var quitar=document.getElementById(opcion)
+            quitar.parentNode.removeChild(quitar)
+        }
+    </script>
+    
+
+    <button onclick="addOption()">Añadir Opcion</button>
+    <button onclick="removeOption()">Borrar Opcion</button>
+</body>
+</html>

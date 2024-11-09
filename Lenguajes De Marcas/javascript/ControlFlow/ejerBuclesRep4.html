@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <script>
+        var contador=0
+        var pos=0
+        var neg=0
+        var cero=0
+        while(contador<10){
+            var num=parseInt(prompt("Ingrese un numero:"))
+            if(num<0){
+                neg++
+            }else if(num==0){
+                cero++
+            }else{
+                pos++
+            }
+            contador++
+        }
+        alert("Hay "+pos+" positivos, "+neg+" negativos, "+cero+" ceros")
+    </script>
+</body>
+</html>

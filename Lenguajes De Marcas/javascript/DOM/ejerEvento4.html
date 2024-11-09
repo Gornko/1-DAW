@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Document</title>
+    <style>
+        .oculto {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function mostrarOcultar(num) {
+            var clase
+            switch (num) {
+                case 1:
+                    clase = document.getElementById("ficha1").getAttributeNode("class")
+                    if (clase.value == "oculto") {
+                        clase.value = "visible"
+                    } else {
+                        clase.value = "oculto"
+                    }
+                    break
+                case 2:
+                    clase = document.getElementById("ficha2").getAttributeNode("class")
+                    if (clase.value == "oculto") {
+                        clase.value = "visible"
+                    } else {
+                        clase.value = "oculto"
+                    }
+                    break
+                case 3:
+                    clase = document.getElementById("ficha3").getAttributeNode("class")
+                    if (clase.value == "oculto") {
+                        clase.value = "visible"
+                    } else {
+                        clase.value = "oculto"
+                    }
+                    break
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="oculto" id="ficha1">
+        Hola, soy el bloque 1</div>
+    <div class="oculto" id="ficha2">
+        Hola, soy el bloque 2</div>
+    <div class="oculto" id="ficha3">
+        Hola, soy el bloque 3</div>
+    <button id="b1" onclick=mostrarOcultar(1)>bloque 1 </button>
+    <button id="b2" onclick=mostrarOcultar(2)>bloque 2</button>
+    <button id="b3" onclick=mostrarOcultar(3)> bloque 3</button>
+</body>
+
+</html>

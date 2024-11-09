@@ -1,0 +1,17 @@
+#peque{
+    width: 100px;
+    height: 100px;
+}
+body{
+    background-color: white;
+    text-align: center;
+}
+#grande{
+    width: 300px;
+    height: 300px;
+}
+#mediano{
+    width: 200px;
+    height: 200px;
+}
+

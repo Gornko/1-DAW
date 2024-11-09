@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: #33E7FF;
+}
+
+h1 {
+    color: #005A66;
+    margin: 0;
+    padding: 0.1em;
+    font-size: 4em;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0.5em;
+}
+p{
+    background-color: #00B4CC;
+    border: 6px dashed #005A66;
+    color: black;
+    font-style: oblique;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    height: 16rem;
+    width: 16rem;
+    overflow: hidden;
+    
+    
+    
+
+}
+p::first-letter{
+    font-style: normal;
+    color: #005A66;
+    font-weight:lighter;
+    font-size: 400%;
+    float: left;
+    line-height: 3rem;
+
+}
+
+

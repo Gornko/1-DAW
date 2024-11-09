@@ -1,0 +1,50 @@
+body{
+    background-color: #FFF280;
+}
+h1{
+    color: black;
+    font-family: sans-serif;
+
+}
+section{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+.fecha{
+    color: white;
+    font-family: sans-serif;
+    background-color: #FF7700;
+}
+article{
+    background-color: #FFEB33;
+    border: 5px solid #FFC533;
+    width: 34rem;
+    display: block;
+    
+    
+}
+div{
+    background-color: #FFDA33;
+    margin: 10px;
+    width: 15rem;
+    float: left;
+    display: block;
+
+}
+p{
+    border: 5px solid #FF7700;
+    color: black;
+    font-family: sans-serif;
+    background-color: #FFDA33;
+    margin: 0;
+    
+    
+}
+h2{
+    color: black;
+    font-family: sans-serif;
+    background-color: #FFC533;
+    margin: 0;
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcular(){
+            var input1=document.getElementById("precio")
+            var precio=input1.value
+            var input2=document.getElementById("cantidad")
+            var cantidad=input2.value
+            var total= document.getElementById("total")
+            var value=document.createAttribute("value")
+            value.value=precio*cantidad
+            total.setAttributeNode(value)
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input id="precio" value="0" type="number">
+        <input id="cantidad" type="number" value="0">
+        <button type="button" id="enviar" onclick="calcular()">Calcular</button>
+        <input type="text" id="total" readonly>
+    </form>
+</body>
+
+</html>

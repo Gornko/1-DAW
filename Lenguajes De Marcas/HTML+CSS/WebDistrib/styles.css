@@ -1,0 +1,52 @@
+#headerPrincipal {
+    background-color: gray;
+}
+
+.headerArticle {
+    background-color: white;
+    color: blue;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+section {
+    background-color: blue;
+    
+}
+
+article {
+    color: white;
+    margin: 30px;
+    border: dashed 2px lightseagreen;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.footerArticle {
+    background-color: white;
+    color: blue;
+    font-size: smaller;
+}
+
+#footerPrincipal {
+    background-color: grey;
+}
+
+nav {
+    background-color: yellow;
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+ul {
+    color: white;
+    
+}
+h2{
+    margin-top: 0px;
+}
+
+
+

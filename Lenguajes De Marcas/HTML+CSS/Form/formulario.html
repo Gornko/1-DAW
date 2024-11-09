@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Por favor, si usted esdocente responda a las siguientes preguntas:</h1>
+    <h6>Este formulario se visualizara mejor con navegadores de ultima generacion</h6>
+    <fieldset>
+        <legend>1. Informacion personal</legend>
+        <p>Apellidos: <input type="text" name="apellidos"  size="50"></p>
+        <p>Nombre: <input type="text" name="nombre"  size="50"></p>
+        <p>Fecha de Nacimiento: <input type="text" name="fechaNac"  size="20"></p>
+        <p>Sexo 
+            <label ><input type="checkbox" name="hombre" value="hombre" >Hombre </label>
+            <label ><input type="checkbox" name="mujer" value="mujer" >Mujer</label> 
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>2. Informacion de contacto</legend>
+        <p>Telefono: <input type="text" name="telefono" size="50"></p>
+        <p>Email: <input type="text" name="email" size="50"></p>
+        </fieldset>
+
+    <fieldset>
+        <legend>3.Datos profesionales</legend>
+        <p>Centro de trabajo: <input type="text" name="apellidos"  size="50"></p>
+        <p>Localidad: <input type="text" name="nombre"  size="50"></p>
+        <p>¿Es funcionario?
+            <input type="checkbox" >
+        </p>
+        <p>NRP <input type="text" size="50"></p>
+        <p>Seminario/nivel
+            <select >
+                <option value="Lengua y Literatura">Lengua y Literatura</option>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Geografía e historia">Geografía e historia</option>
+                <option value="Biología y geología">Biología y geología</option>
+                <option value="Tecnología">Tecnología</option>
+            </select>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>4. Por favor facilitenos la siguiente informacion:</legend>
+        <p>¿Como llego aqui?
+            <select >
+                <option value="azar">Al azar</option>
+                <option value="URL">Alguien le indico la URL de la pagina</option>
+                <option value="buscador">A traves de un buscador</option>
+                <option value="enlace">Mediante un enlace de otra pagina</option>
+            </select>
+        </p>
+        <p >Introduzca aqui sus comentarios <br> <br>
+            <textarea  name="areatexto"  cols="30" rows="10">Escriba aqui</textarea>
+        </p>
+        
+        <p >Desearia mas informacion sobre:</p>
+        <label ><input type="checkbox">Material audiovisual </label>
+        <label ><input type="checkbox">Textos electronicos </label>
+        <label ><input type="checkbox">Libros de texto </label>
+        <label ><input type="checkbox">Diseños curriculares </label>
+        
+    </fieldset>
+</body>
+</html>

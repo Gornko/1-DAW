@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: hwb(235 88% 8%);
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+    background-color: hwb(235 20% 70%);
+    color: white;
+    font-size: 4rem;
+}
+
+h2 {
+    margin: 0 10px;
+    background-color: hwb(235 20% 70%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    padding-left: 5px;
+    background-color: hwb(125 15% 35%);
+    color: white;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 5px 5px;
+
+}
+article{
+    border-radius: 10px;
+    margin: 20px 40px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+section#escritorio {
+    position: absolute;
+    top: 6rem;
+    right: 10%;
+    width: 35%;
+    border-left: hwb(235 20% 70%) 2px solid;
+    border-right: hwb(235 20% 70%) 2px solid;
+}
+section#internet {
+    position: absolute;
+    top: 6em;
+    left: 10%;
+    width: 35%;
+    border-left: hwb(235 20% 70%) 2px solid;
+    border-right: hwb(235 20% 70%) 2px solid;
+}

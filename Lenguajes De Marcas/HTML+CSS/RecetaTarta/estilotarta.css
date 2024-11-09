@@ -1,0 +1,58 @@
+body {
+    background-color: darkgoldenrod;
+}
+h1{
+    background-color: brown;
+    color: white;
+    border: 5px dashed black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+div{
+    background-color: darkgoldenrod;
+    border-top: 5px solid grey;
+    border-left: 5px solid grey;
+    border-right: 5px solid brown;
+    border-bottom: 5px solid brown;
+    margin: 20px;
+
+}
+h2{
+    background-color: white;
+    color: black;
+    border: 5px dotted brown;
+    text-transform: uppercase;
+    text-align: right;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 0px;
+    border-bottom: none;
+
+}
+#listaSinOrden{
+    background-color: brown;
+    color: black;
+    border: 5px dotted white;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0px;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+#listaOrden{
+    background-color: black;
+    color: brown;
+    border: 5px dotted white;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0px;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}

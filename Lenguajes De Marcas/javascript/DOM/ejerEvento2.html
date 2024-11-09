@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 45%;
+            float: left;
+            border: 2px solid blue;
+            margin: 10px;
+            height: 100px;
+            
+        }
+        .colorVerde{
+            background-color: green;
+        }
+        .colorAmarillo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<script>
+function cambiaColor(param){
+    var parrafo1=document.getElementById("parrafo1")
+    var parrafo2=document.getElementById("parrafo2")
+    switch(param){
+        case 1:
+            parrafo2.classList.add('colorVerde')
+            parrafo1.classList.remove('colorAmarillo')
+            parrafo1.classList.add('colorVerde')
+            break
+        case 2:
+            parrafo1.classList.remove('colorVerde')
+            parrafo1.classList.add('colorAmarillo')
+            break
+        default: alert("No funsiona")
+    }
+}
+</script>
+
+<body>
+    <p id="parrafo1" onmouseover=cambiaColor(1) onmouseout="cambiaColor(2)">Pasa el ratón por aquí</p>
+    <p id="parrafo2">efectos de movimiento</p>
+</body>
+
+</html>

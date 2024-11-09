@@ -1,0 +1,37 @@
+body{
+    background-color: #DDB68B;
+    
+}
+h1{
+    color: #A9A9A9;
+    text-align: center;
+}
+h2{
+    background-color: #FD7657;
+    color: white;
+    position: relative;
+    top: -1.5em;
+    width: 5em;
+    left: 1.5em;
+    padding-left: 3px;
+}
+div{
+    border: 2px dashed #FD7657;
+    margin: 15px;
+    height: 12em;
+    width: 12em;
+    padding: 5px;
+    float: left;
+}
+p::first-letter{
+    float: left;
+    font-size: 300%;
+}
+p{
+    text-align: left;
+    margin: 5px;
+    position: relative;
+    top: -1em;
+    
+    
+}
