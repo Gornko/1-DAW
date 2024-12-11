@@ -10,6 +10,7 @@ A continuación se muestran los distintos ejercicios realizados durante el curso
 6. **Estructuras de datos**
 7. **Gestión de excepciones**
 8. **POO - Herencia, polimorfismo...**
+9. **Colecciones**
 
 ## Herramientas Utilizadas
 
